@@ -1,0 +1,293 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 150px;
+  height: 100px;
+  border: 1px solid #000;
+  margin: 10px 0;
+}
+.img_book{
+    max-width:200px;
+
+    width:auto;
+    height:auto;
+}
+.photo_event{
+    max-width:1000px;
+    width:auto;
+    height:auto;
+}
+.img_pdf{
+    max-width:40px;
+
+    width:auto;
+    height:auto;
+}
+.img_event{
+    max-width:300px;
+
+    width:auto;
+    height:auto;
+}
+.narrow {
+  width: 100px;
+  height: 150px;
+}
+
+.fill {
+  object-fit: fill;
+}
+
+.contain {
+  object-fit: contain;
+}
+
+.cover {
+  object-fit: cover;
+}
+
+.none {
+  object-fit: none;
+}
+
+.scale-down {
+  object-fit: scale-down;
+}
+
+.punjabi {
+	font-family: GurbaniLipi, GurbaniLipiLight;
+	font-weight:normal;
+}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url('images/ocean.jpg');
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+#banner {
+	height: 150px;
+	width: 100%;
+	object-fit: scale-down;
+}
+
+.title {
+	color: rgb(120, 120, 120);
+	font-size: 12px;
+}
+
+.margin-article {
+	margin-bottom: 40px;
+}
+
+.bgimg {
+  /* Background image */
+  background-image: url('/static/images/forest_roadpath.avif');
+  /* Full-screen */
+  height: 100%;
+  /* Center the background image */
+  background-position: center;
+  /* Scale and zoom in the image */
+  background-size: cover;
+  /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
+  position: relative;
+  /* Add a white text color to all elements inside the .bgimg container */
+  color: white;
+  /* Add a font */
+  font-family: "Courier New", Courier, monospace;
+  /* Set the font-size to 25 pixels */
+  font-size: 25px;
+}
+
+/* Position text in the top-left corner */
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+/* Position text in the bottom-left corner */
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+/* Position text in the middle */
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the <hr> element */
+hr {
+  margin: auto;
+  width: 40%;
+}
+/* fonts are uploaded to make sure these fonts are available */
+@font-face{
+	font-family:'GurbaniLipi';
+	src:url('url_for('static', filename='/fonts/Gurblipi.ttf')}}') format()'truetype);
+}
+@font-face{
+	font-family:'GurbaniLipiLight';
+	src:url('url_for('static', filename='/fonts/Gurbli_l.ttf')}}') format()'truetype);
+}
+
+/* the following are for the video and phot - events.html file */
+
+
+ul.a {
+  list-style-type: square;
+}
+li.b {
+  color: black;
+}
+
+
+
+/* Position the image container (needed to position the left and right arrows) */
+.container_photo {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: grey;
+  font-weight: bold;
+  font-size: 40px;
+  border-radius: 0 13px 13px 0;
+  transition: 0.6s ease;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 0 13px 13px 0;
+}
+
+/* Position the "previous button" to the left */
+.prev {
+  left: 0;
+  border-radius: 13px 0 0 13px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 16px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 10;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 15px 16px 10px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: red;
+}
+
+a:active {
+  color: green;
+}
+
+#box li.references { list-style-type:"1";  margin: 10px; font-size:10px}
+#box blockquote.glossary { text-indent:0em; font-weight:normal;}
+
+
+/*  try new things from here */
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #04AA6D;
+  width: 0%;
+}
+
+.content {
+  padding: 100px 0;
+  margin: 50px auto 0 auto;
+  width: 10%;
+}
